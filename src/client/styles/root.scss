@@ -1,0 +1,56 @@
+$color_1: #040500;
+$background-color_1: #f1f4c6;
+$background-color_2: aliceblue;
+$background-color_3: #868f0980;
+
+body {
+	background-color: $background-color_1;
+}
+.container {
+	width: 100%;
+	height: 100%;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: 38px 620pxx;
+}
+h1 {
+	font-size: 100px;
+}
+.container_content {
+	margin: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	background-color: $background-color_2;
+	flex-direction: column;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.239);
+	margin-bottom: 40vh;
+}
+.form {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	position: relative;
+}
+input {
+	display: flex;
+	margin: 3px;
+	padding: 3px;
+}
+.submitButton {
+	width: 40%;
+	cursor: pointer;
+	background-color: $background-color_1;
+	color: $color_1;
+	border: 1px solid black;
+	border-radius: 10px;
+	padding: 5px;
+	&:hover {
+		background-color: $background-color_3;
+	}
+}
+label {
+	font-size: 18px;
+}
